@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "cache_function_demo": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7275",
+      "launchBrowser": false
+    }
+  }
+}
