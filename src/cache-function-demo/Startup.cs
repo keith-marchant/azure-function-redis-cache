@@ -9,7 +9,7 @@ namespace Demo.Function
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            var redisConnection = RedisConnection.InitializeAsync(connectionString: "demo-20220921.redis.cache.windows.net,abortConnect=false,ssl=true,allowAdmin=true,password=nRjyYztsLijZIDE0RF1TvvcR9slxanJRFAzCaBPqI0k=").GetAwaiter().GetResult();
+            var redisConnection = RedisConnection.InitializeAsync(connectionString: "YOUR CONNECTION STRING HERE").GetAwaiter().GetResult();
             builder.Services.AddSingleton<RedisConnection>(redisConnection);
             builder.Services.AddHttpContextAccessor();
         }
